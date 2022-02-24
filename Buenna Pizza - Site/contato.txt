@@ -1,0 +1,16 @@
+  <div id="contate-nos">
+    <h3>Contate-nos </h3><br><br>
+    </div>
+    <div class="contato">
+      <ul>
+    <h4>Nome:</h4><input type="textbox" id="nome" placeholder="Digite seu Nome">
+    <br><br>
+    <h4>Email:</h4><input type="textbox" id="nome" placeholder="Digite seu Email">
+    <br><br>
+    <h4>Telefone:</h4><input type="textbox" id="nome" placeholder="Digite seu telefone">
+    <br><br>
+    <h4>Sugestão de anime:</h4><input type="textbox" id="nome" placeholder="Digite sua sugestão de anime">
+    <br><br>
+    <h4></h4><button id="nome"> Enviar </button>
+    </ul>
+    </div>

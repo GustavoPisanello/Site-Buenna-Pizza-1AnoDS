@@ -1,0 +1,365 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: Consolas;
+}
+ body{
+     background-color: #FCE59F;
+ }
+ /* Estilizando o menu */
+
+ .menu{
+	width:100%;
+	height:100px;
+	background-color:#fcdb24;
+    position: fixed;
+    z-index: 11;
+}
+.menu img{
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+    display: inline-block;
+}
+ .menu ul{
+	list-style:none;
+	position:relative;
+    font-size: 17px;	
+}
+.menu ul li{
+	width: 150px;
+	float: right;	
+}
+.menu a{
+	padding:15px;
+	display: block;
+	text-decoration:none;
+	text-align:center;
+	background-color:#fcdb24;
+	color:#050505ef;
+}
+.menu ul ul{
+	position:absolute;
+	visibility:hidden;
+    max-width: 500px;
+    border-radius: 5px;
+}
+.menu ul li:hover ul{
+	visibility:visible;
+}
+.menu a:hover{
+	background-color:white;
+	color:#FCE59F;
+    border-radius: 5px;
+    transition: all 0.4s; 
+}
+.menu ul ul li{
+	float:none;
+}
+label [for="btn_Menu"]{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+.slider{
+	width:600px;
+	height:300px;
+	display:block;
+	margin-left: 22%;
+	margin-top:5%;
+	position:relative;
+}
+.slider li{
+	list-style:none;
+	position:absolute;
+}
+.slider img{
+	margin-left: auto;
+	width:750px;
+	height:400px;
+	vertical-align:top;
+	opacity:0;
+	visibility:hidden;
+	border-radius: 10px;
+	box-shadow: 0 0 20px 4px #f8752a;
+}
+.slider input{
+	display:none;
+}
+.slider label{
+	width:20px;
+	height:10px;
+	z-index:10;/*O eixo Z é responsavel pelo calculo de posicionamento da profundidade 
+	de algum elemento */
+	bottom:10px;
+	position:absolute;
+	float:left;
+	cursor:pointer;
+	background-color:#f8752a;
+    border-radius: 5px;
+	margin-right: 20%;
+}
+/*criando o conjunto de elementos filhos para iniciar as imagens no slide*/
+.slider li input:checked ~ img {
+	opacity:1;
+	visibility:visible;
+	z-index:10;
+}
+.slider li:nth-child(1) label {
+	left: 10px;
+
+}
+.slider li:nth-child(2) label {
+	left: 40px;
+}
+.slider li:nth-child(3) label {
+	left: 70px;
+
+}
+hr{
+    width:60%;
+    margin-left: 20%;
+}
+#flyer hr{
+    width:60%;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:brown;
+    font-size: 30px;
+    margin-left: 45%;
+}
+p{
+    color:rgb(61, 60, 60); 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 22%;
+    margin-top:9%;
+}
+#flyer p{
+    color: brown;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 42%;
+    font-size: 25px;
+}
+#cartao p{
+    color: brown;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 38%;
+    font-size: 25px;
+}
+#flyer img{
+    width: 380px;
+    height: 550px;
+    margin-left: 37%;
+}
+#cartao hr{
+    width:60%;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+#cartao img{
+    width: 350px;
+    height: 550px;
+    margin-left: 37%;
+}
+#btn_Menu{
+    display: none;
+}
+label[for="btn_Menu"]{
+    display:none;
+}
+footer{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 25px;
+    width: 100%;
+    height: 50px;
+    color: black;
+    background-color: #ffd723;
+    font-family: Consolas;
+    text-transform: uppercase;
+}
+#cima{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #ffd723;
+    box-shadow: 0 0 10px 3px #ffd723;
+    text-decoration: none;
+}
+/* Estilizando o conteúdo da página */
+.conteudo{
+    margin-top: 80px;
+    margin-left: 150px;
+    color: white;
+}
+img{
+    width:80%;
+    height:70%;
+}
+.conteudo img{
+    width: 200px;
+    height: 300px;
+}
+.topo img{
+    transform: rotate(180deg);
+
+}
+.conteudo ul{
+    list-style: none;
+    float: left;
+    display: block;
+}
+.conteudo ul li{
+    width: 250px;
+	float:left;	
+}
+.conteudo hr{
+    width: 50%;
+    border: solid 0.5px white;
+    margin-left: 20%;
+}
+#cima img{
+    width: 30px;
+    height:30px;
+}
+#nome{
+    border-radius: 5px;
+    width: 200px;
+}
+.contato{
+    width: 210px;
+    height: 260px;
+    border-radius: 10px;
+    margin-left: 40%;;
+    color: brown;
+}
+
+#contate-nos h3{
+    margin-left: 45%;
+    color: brown;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#footercont{
+    margin-top: 150px;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 25px;
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: #ffd723;
+    font-family: Consolas;
+}
+#cardapio{
+    width: 80%;
+    margin-left: 6%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: space-beetween;
+}
+#cardapio p{
+    font-size: 30px;
+    color: brown;
+}
+#cardapio h3{
+    color: rgb(61, 60, 60);
+}
+#cardapio h5{
+    color:  rgb(255, 196, 67);
+}
+#cardapio strong{
+    visibility: hidden;
+}
+
+/* Responsividade*/
+
+@media(max-width: 620px){
+    .menu ul li{
+		width:100%;
+		float:none;	
+		
+}
+	.menu ul li:hover ul{
+		width:100%;
+	}
+	.menu ul ul{
+		position:static;
+		overflow:hidden;
+		max-height:0;
+		transition: all 0.4s;		
+	}
+    .cardapio{
+        margin-top: 1%;
+    }
+
+    strong{
+        display:none;
+        content:attr(title)"\a"attr(cite);        
+    }
+	#btn_Menu{
+		display: none;
+	}
+	label[for="btn_Menu"]{
+		display:block;
+	}
+	#btn_Menu:checked ~ .menu{
+		margin-left:0px;
+	}
+	.menu{
+		margin-top:5px;
+		margin-left:-100%;
+		transition: all 0.4s;
+
+	}
+	.menu a{
+	background-color:#fcdb24;
+	color:#000;
+	} 
+    .conteudo{
+        margin-left: 10%;
+    }
+    .conteudo img{
+        width:40%;
+        height:40%;
+        margin-bottom: 0px;
+    }
+    .cardapio h3{
+        margin-bottom: 40px;
+        margin-left: 0px;
+        font-size: 15px;
+    }
+    .cardapio h5{
+        font-size: 10px;
+    }
+    .slider{
+        display:none;
+    }
+  footer{
+    margin-top: 870px;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 25px;
+    width: 100%;
+    height: 50px;
+    color: black;
+    background-color: #fcdb24;
+    font-family: Consolas;
+}
+
+}
